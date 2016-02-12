@@ -1,101 +1,85 @@
-Tutorial NodeJS, Express, Atom, GitHub, Cloud9 y Markdown
-======================================================
+Tutorial Tareas Iniciales
+=========================
+Instalacion de NodeJs
+--------------------
+Primero hay que descargarlo de la página oficial de [nodejs](http://www.nodejs.org)
+luego instalarlo abriendo el ejecutable descargado, comprobaremos que está instalado
+abriendo la aplicación *Node.js command prompt*
 
-## Instalación de NodeJS en Windows
+![Consola](./img/node.png)
 
-Es un intérprete **Javascript** del lado del servidor que cambia la noción de cómo debería trabajar un servidor. Su meta es permitir a un programador construir aplicaciones altamente escalables y escribir código que maneje decenas de miles de conexiones simultáneas en una sólo una máquina física.
+### Framework Express
+Para instalar este framework hay que poner el siguiente comando en la consola de nodejs.
 
-Para empezar a utilizarlo descargar el paquete de instalación para la plataforma windows y seguir los pasos del asistente de instalación de **NodeJS**.
+`npm install express --save`
 
-![](images/node.png)
+![Consola](./img/node2.png)
 
-Abrimos la consola de **NodeJS** y comprobamos que se ha instalado correctamente, aparecerá el siguiente mensaje que indica que se ha instalado.
+Instalacion de Atom
+------------------
+Atom es un editor de texto de código abierto para desarolladores hecho por GitHub, puede
+ser usado en OS X, Linux y windows y soporte para plugins escritos en Node.js
+Se puede descargar de su [página oficial](https://atom.io/)
 
-Instalamos el framework **Express** con la consola de **NodeJS** y el siguiente comando:
+Al usar atom y escribiendo en formato **Markdown** podemos previsualizar nuestro texto en html presionando `ctrl+shift+m`.
 
-**Comando**
+![atom](./img/atom.png)
 
-> `npm install express --save`
+Instalar GitHub Desktop
+----------------------
+Descargar de la página de [GitHub](https://desktop.github.com/).
 
-![](images/node2.png)
+Una vez instalado deberas logearte con tu cuenta de github y apartir de ahí podras crear, clonar y otras tareas referentes a los repositorios de una manera muy intuitiva.
 
-## Instalación del editor de texto Atom
+Cloud9
+------
+Es un IDE de desarrollo online, para su uso será necesario crear una cuenta en la [página oficial](http://9.io) o acceder con las credenciales de GitHub si ya se dispone de una cuenta. Una vez registrados podremos crear proyectos de varias tecnologías como puede ser NodeJS, HTML5, C++, Ruby On Rails, etc.
 
-Usaremos **Atom** como editor de texto para el desarrollo de nuestros proyectos, para ello descargamos el instalador en la página oficial de atom, y a continuación ejecutamos el asistente de instalación.
+![atom](./img/c9.png)
 
-![](images/atom1.png)
-
-Dado que vamos a utilizar el formato **Markdown** es bueno saber que en **Atom** podremos obtener una preview del contenido de nuestro fichero Markdown ya que incorpora el formato **GitHub Markdown** con el comando:
-
-**Comando**
-
-> * Markdown preview `ctrl+shift+m`
-> * Markdown export to HTML `Save As HTML`
-
-
-
-## Instalación de GitHub Desktop
-
-GitHub es una plataforma para alojar proyectos utilizando el sistema de control de versiones **Git**. Para instalarlo accedemos a la página oficial de **GitHub** y descargamos el instalador que ejecutaremos posteriormente para iniciar el asistente de instalación.
-
-![](images/git.png)
-
-Una vez instalado configuramos nuestra cuenta de **GitHub** en la aplicación para poder sincronizar nuestro repositorio tanto local como remoto, en caso de no tener cuenta crearemos una en la página de **GitHub**.
-
-## Cloud 9
-
-Es un IDE de desarrollo online, para su uso será necesario crear una cuenta en la página oficial o acceder con las credenciales de GitHub si ya se dispone de una cuenta. Una vez registrados podremos crear proyectos de varias tecnologías como puede ser NodeJS, HTML5, C++, Ruby On Rails, etc.
-
-![](images/cloud.png)
-
-Si disponemos de algún proyecto en un repositorio de GitHub podremos asociarlo a **Cloud9** para trabajar en él tan solo creando un “`nuevo workspace`” y añadiendo la url *git* del correspondiente repositorio.
-
-![](images/cloud2.png)
-
-Además **Cloud9** permite el trabajo en equipo en el IDE añadiendo miembros a tu workspace.
-
-## Markdown
-
+Markdown
+--------
 Markdown es un lenguaje de marcado ligero, lo vamos a utilizar en el editor de texto Atom ya que incorpora por defecto este formato y podremos obtener un live preview mientras vamos desarrollando además de poder exportarlo a HTML sin la necesidad de usar un conversor adicional.
 
 Sintaxis:
 
-
 Encabezados
-```
-# Encabezado H1
+#  Encabezado H1
 ## Encabezado H2
 ### Encabezado H3
-```
+
 Tipografía
-```
-**Negrita**
-*Cursiva*
-> Citas
-Parrafo separar por lineas en blanco
-`Codigo`
-```
+
+    **Negrita**
+    *Cursiva*
+    > Citas
+    Parrafo separar por lineas en blanco
+    `Codigo`
+
 Recursos
-```
-![Texto imagen](url-imagen)
-* [Links](https://example.com)
-```
+
+    ![Texto imagen](url-img)
+    [Enlace](https://www.enlace.com)
+
 Listas
-```
-1. Lista 1
-2. Lista 2
 
-* Lista 1
-* Lista 2
-```
+    1. Lista 1
+    2. Lista 2
 
-**Recursos:**
+    * Lista 1
+    * Lista 2
 
-* [NodeJS](https://nodejs.org)
-* [Express](http://expressjs.com)
-* [Atom IDE](https://atom.io)
-* [GitHub Desktop](https://desktop.github.com)
-* [GitHub Pages](https://pages.github.com/)
-* [Cloud 9 IDE](https://c9.io)
-* [Markdown](http://daringfireball.net/projects/markdown/)
-* [Resultado del Markdown HTML](http://alu0100536652.github.io/Tutorial-STW/)
+Instalar Pandoc
+-------------
+Descargarlo de la [página oficial](https://www.pandoc.org)
+Pandoc es un traducto de archivos en formato Markdown**(.md)** a formato .HTML para ello en la consola escribimos *(estando en el directorio del fichero)*.
+
+`pandoc input.md -o output.html`
+
+![pandoc](./img/pandoc.png)
+
+ Usando GitPages
+ ----------
+ GitHub provee a cada usuario de un sitio para alojar su web.
+ Colgaremos este Tutorial en nuestro gh-page.
+ 
